@@ -13,9 +13,9 @@ public abstract  class AbstractHashTable<K, V>
 	}//class Entry
 	
 	public abstract int size();
-	public abstract void insert();
-	public abstract V find();
-	public abstract void remove();
+	public abstract void insert(K key, V value);
+	public abstract V find(K key);
+	public abstract void remove(K key);
 	
 	//Must pay attention to avoid collision.
 	//Hash function is never like  function.  
